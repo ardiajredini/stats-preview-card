@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(233, 47%, 7%);
+    font-family: 'Inter', sans-serif;
+}
+
+main{
+    height: 440px;
+    width: 1080px;
+    margin: 170px auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    
+}
+
+.left-side{
+    background-color: hsl(244, 38%, 16%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 10px 0 0 10px;
+}
+
+.text{
+    margin: 80px;
+}
+
+.middle-text{
+   padding-top: 40px;
+   line-height: 28px;
+   font-weight: 100;
+   color: hsla(0, 0%, 100%, 0.75);
+}
+
+.end-text{
+    position: relative;
+    top: 65px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    
+}
+
+.value{
+    color: hsl(0, 0%, 100%);
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 37px;
+}
+
+.type{
+    font-weight: 100;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: hsla(0, 0%, 100%, 0.75);
+    letter-spacing:1px
+}
+
+.right-side{
+    background-image: url("images/image-header-desktop.jpg");
+    border-radius: 0 10px 10px 0;
+    background-repeat: no-repeat;
+}
+
+.transparent{
+    background: hsl(277, 64%, 61%);    
+    opacity : 0.5;
+    height: 100%;
+    width: 100%;
+    border-radius: 0 10px 10px 0;
+}
+
+
+@media only screen and (max-width: 421px) {
+    
+   main{
+    display: grid;
+    grid-template-columns: auto;
+    width: 350px;
+    height: auto;
+    text-align: center;
+    border-radius:  0 10px 10px;
+
+   }
+
+   .left-side{
+    border-radius:  0 0  10px 10px;
+    
+    margin: 0px;
+}
+    .start-text{
+        font-size: small;
+    }
+    .text{
+        
+        margin: 50px;
+    }
+
+   .right-side{
+       background-image: url("images/image-header-mobile.jpg");
+       
+   }
+
+
+   
+   .end-text{
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 20px;
+    padding-bottom: 40px;
+   }
+
+  }
